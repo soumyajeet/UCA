@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DMCIS</title>
+	
+	
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+	
+	 <!-- DataTables CSS -->
+    <link href="css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+   
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	
+	
+	
+	<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+	
+	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+		
+		<div class="row">
+		<div style="width:100%;background:#446CB3;text-align:right; padding: 4px 20px 5px 0;">
+			
+				<div class="headermenu">
+				<a href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><span class="glyphicon glyphicon-home" style="margin:5px;" ></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit" style="margin:5px;" ></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Reload"><span class="glyphicon glyphicon-refresh" style="margin:5px;"></span></a>
+								
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Search"><span class="glyphicon glyphicon-search" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Save"><span class="glyphicon glyphicon-save" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Calendar"><span class="glyphicon glyphicon-calendar" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Exit"><span class="glyphicon glyphicon-off" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Help"><span class="glyphicon glyphicon-question-sign" style="margin:5px;"></span></a>
+				</div>
+                
+		</div>
+		</div>
+        <!-- Navigation -->
+		
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header" style="padding: 6px 0;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="img/dmcisnewlogo.png" width="300" /></a>
+            </div>
+            <!-- /.navbar-header -->
+			
+			<div style="padding-top:6px;">
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-pencil fa-fw"></i>
+						Underwriting <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="newtemplate.html">
+                                <div>
+                                    <strong>Create New Template</strong>
+                                    <!-- <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span> -->
+                                </div>
+                               
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Template</strong>
+                                    
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>New Application</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Application</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Copy From Template</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>New Policy</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Policy</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Policy Action</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Duplicate Search</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                       <i class="fa fa-eye fa-fw"></i> 
+					   Inspections <i class="fa fa-caret-down"></i> 
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find My Request</strong>
+                                       
+                                    </p>
+                                 
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Post My Result</strong>
+                                       
+                                    </p>
+                                  
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>New Request</strong>
+                                     
+                                    </p>
+                                  
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Request</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Assign Inspector</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Inspection Charge</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Re-assign Inspector</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+                      
+                       
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                       <i class="fa fa-list fa-fw"></i>
+					   Claims <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>New Less Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Find Less Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Open Claim</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Assign Adjustor</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Claims</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Copy Claim</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Re-assign Adjustor</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Authorize Reserves</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Authorize Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Payment Control</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Expense Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Process Check</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+				
+				
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <i class="fa fa-bar-chart-o fa-fw"></i>
+					  Reports <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Request Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Search Reports</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Saved Reports</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                                              
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+				
+				
+				
+				
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+			</div>
+            <!-- /.navbar-top-links -->
+
+<div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+						
+						<li>
+                            <a href="style.html"><i class="fa fa-edit fa-fw"></i> <span style="font-size:120%;font-weight:bold;">UI STYLES</span></a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-pencil fa-fw"></i> Underwriting<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+								<li>
+									<a href="newtemplate.html">Create New Template</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Template</a>
+								</li>
+								
+								<li>
+									<a href="#">New Application</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Application</a>
+								</li>
+								
+								<li>
+									<a href="#">Copy From Template</a>
+								</li>
+								
+								<li>
+									<a href="#">New Policy</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Policy</a>
+								</li>
+								
+								
+								<li>
+									<a href="#">Policy Action</a>
+								</li>
+								
+								
+								<li>
+									<a href="#">Duplicate Search</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-eye fa-fw"></i> Inspections<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">Find My Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Post My Result</a>
+								</li>
+								
+								<li>
+									<a href="#">New Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Assign Inspector</a>
+								</li>
+								
+								<li>
+									<a href="#">Inspection Charge</a>
+								</li>
+								
+								<li>
+									<a href="#">Re-assign Inspector</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-list fa-fw"></i> Claims<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">New Less Report</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Less Report</a>
+								</li>
+								
+								<li>
+									<a href="#">Open Claim</a>
+								</li>
+							   
+								<li>
+									<a href="#">Assign Adjustor</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Claims</a>
+								</li>
+								
+								<li>
+									<a href="#">Copy Claim</a>
+								</li>
+								
+								<li>
+									<a href="#">Re-assign Adjustor</a>
+								</li>
+								
+								<li>
+									<a href="#">Authorize Reserves</a>
+								</li>
+								
+								<li>
+									<a href="#">Authorize Payments</a>
+								</li>
+								
+								<li>
+									<a href="#">Payment Control</a>
+								</li>
+								
+								<li>
+									<a href="#">Expense Payments</a>
+								</li>
+								
+								<li>
+									<a href="#">Process Check</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Payments</a>
+								</li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">Request Report</a>
+								</li>
+							   
+								<li>
+									<a href="#">Search Reports</a>
+								</li>
+								
+								<li>
+									<a href="#">Saved Reports</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+		
+		
+		<!--  /. secondary-navigation-bar  -->
+			
+		<!--  /. secondary-navigation-bar  -->
+
+        <div id="page-wrapper" style="background-image:url('img/Hunting-Eagl.png'); background-repeat: no-repeat; background-position: center;">
+           
+			
+			<div class="row">
+                <div class="col-md-8">
+					<div style="font-size:20px;">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pause"><span class="glyphicon glyphicon-pause" style="color:#ECF276;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="List"><span class="glyphicon glyphicon-compressed" style="color:#F2C55C;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Price"><span class="glyphicon glyphicon-usd" style="color:#6AA349;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Price"><span class="glyphicon glyphicon-usd" style="color:#A03894;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Unlock"><span class="glyphicon glyphicon-lock" style="color:#D3CA4A;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cut"><span class="glyphicon glyphicon-transfer" style="color:#5151A5;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Copy"><span class="glyphicon glyphicon-transfer" style="color:#F70909;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Open"><span class="glyphicon glyphicon-folder-open" style="color:#0DBA07;"></span></a>
+									
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="File"><span class="glyphicon glyphicon-file"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Unlock"><span class="glyphicon glyphicon-list" style="color:#0DBA07;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Calendar"><span class="glyphicon glyphicon-calendar" style="color:#8959F9;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit" style="color:#D39563"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Alphabet"><span class="glyphicon glyphicon-sort-by-alphabet" style="color:#B57124"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Paragraph"><span class="glyphicon glyphicon-sort-by-order" style="color:#DB2B13"></span></a>
+					
+					
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div style="float:right; font-size:20px;">
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit" style="color:#149B1D;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Lists"><span class="glyphicon glyphicon-tasks" style="color:#F7F702;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Copy"><span class="glyphicon glyphicon-file" style="color:#1832F4;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-file" style="color:#132AD8;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="File"><span class="glyphicon glyphicon-file" style="color:#000000;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Print"><span class="glyphicon glyphicon-print" style="color:#63D3CE;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Save"><span class="glyphicon glyphicon-floppy-saved" style="color:#5CF959;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cancel"><span class="glyphicon glyphicon-floppy-remove" style="color:red;"></span></a>
+					</div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+			
+			<div class="row">
+                <div class="col-lg-12">
+                    
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+          
+            <div class="row">
+                
+               <div class="panel panel-default">
+                        <div class="panel-heading">
+                           New - Master - Policy
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+							<ul class="nav nav-tabs">
+								<li role="presentation" class="active"><a href="#">Met</a></li>
+								<li role="presentation"><a href="#">Sum</a></li>
+								<li role="presentation"><a href="#">Rls</a></li>
+								<li role="presentation"><a href="#">Rp</a></li>
+								<li role="presentation"><a href="#">Cov</a></li>
+								<li role="presentation"><a href="#">Al</a></li>
+								<li role="presentation"><a href="#">Drv</a></li>
+								<li role="presentation"><a href="#">Mvr</a></li>
+								<li role="presentation"><a href="#">Frm</a></li>
+								<li role="presentation"><a href="#">Pmt</a></li>
+							</ul>
+                        </div>
+						
+						<div class="panel-body">
+							<form role="form">
+                            <div class="row">
+                                
+                                    <div class="col-xs-6">
+										
+                                        <div class="form-group">
+                                            <label>Ref #</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+										
+									</div>
+
+									<div class="col-xs-6">
+										<div class="form-group">
+                                            <label>Status</label>
+                                            <select class="form-control">
+                                                <option>-Select One-</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+									</div>
+
+							</div>	
+
+							<div class="row">
+                                
+                                    <div class="col-xs-6">
+										
+                                         <div class="form-group">
+                                            <label>Control #</label>
+                                            <p class="form-control-static">2176469</p>
+                                        </div>
+										
+									</div>
+
+									<div class="col-xs-6">
+										<div class="form-group">
+                                            <label>Appl #</label>
+                                            <p class="form-control-static"></p>
+                                        </div>
+									</div>
+
+							</div>	
+                             
+							<div class="row">
+                                <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Policy #</label>
+                                            <input class="form-control">
+                                    </div>
+								 </div>
+								 <div class="col-xs-6">
+									<label>---</label>
+									<div class="checkbox">
+											<label>
+											<input type="checkbox" value="">Generate
+											</label>
+                                     </div>
+								 </div>
+							</div>	
+
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<h1 class="page-header"></h1>
+									</div>
+								
+								
+							</div>	
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Master Control #</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Policy #</label>
+                                            <input class="form-control">
+                                            
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Prev Control #</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Policy #</label>
+                                            <input class="form-control">
+                                            
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<h1 class="page-header"></h1>
+									</div>
+								
+								
+							</div>
+							
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<div class="form-group">
+                                            <label>Name</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+									</div>
+								
+								
+							</div>
+							
+							<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group">
+                                            <label>Legal Name</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+									</div>
+							</div>
+							
+							<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group">
+                                            <label>DBA</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+									</div>
+							</div>
+							
+							<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group">
+                                            <label>Mail Address</label>
+                                            <input class="form-control">
+                                            <input class="form-control">
+											<input class="form-control">
+                                        </div>
+									</div>
+							</div>
+							
+							<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<div class="form-group">
+                                            <label>City</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<div class="form-group">
+                                            <label>State</label>
+                                            <select class="form-control">
+                                                <option>-Select State-</option>
+                                                <option>State 1</option>
+                                                <option>State 2</option>
+                                                <option>State 3</option>
+                                                <option>State 4</option>
+                                            </select>
+                                            
+                                        </div>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<div class="form-group">
+                                            <label>Zip</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										<div class="form-group">
+                                            <label>Country</label>
+                                            <select class="form-control">
+                                                <option>-Select Country-</option>
+                                                <option>USA</option>
+                                                <option>UK</option>
+                                                <option>UAE</option>
+                                                <option>Italy</option>
+                                            </select>
+                                            
+                                        </div>
+									</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Phone Home</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Phone Work</label>
+                                            <input class="form-control">
+                                            
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Fax Home</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Fax Work</label>
+                                            <input class="form-control">
+                                            
+                                    </div>
+								 </div>
+							</div>
+							
+                            <div class="row">
+									<div class="col-lg-12">
+										<div class="form-group">
+                                            <label>Email Home</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+									</div>
+							</div>
+
+							 <div class="row">
+									<div class="col-lg-12">
+										<div class="form-group">
+                                            <label>Policy Delivery</label>
+                                            <input class="form-control">
+                                            
+                                        </div>
+									</div>
+							</div> 
+
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<h1 class="page-header"></h1>
+									</div>
+							</div>
+							
+							
+							<div class="row">
+                                <div class="col-lg-12">
+									<div class="form-group">
+										<label>Control #</label>
+										<p class="form-control-static">Century-National Insurance Company [77A]</p>
+									</div>
+								</div>		
+							</div>
+
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>LOB</label>
+                                           <p class="form-control-static">Commercial Package Policy [CPP]</p>
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Program</label>
+                                           <p class="form-control-static">Donut Shop . Pref [32]</p>
+                                            
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Policy State</label>
+                                           <p class="form-control-static">California</p>
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Policy City</label>
+                                           <p class="form-control-static">US</p>
+                                            
+                                    </div>
+								 </div>
+							</div>
+                            
+							<div class="row">
+									<div class="col-xs-6 col-sm-3">
+										<div class="form-group">
+                                            <label>Branch</label>
+                                            <select class="form-control">
+                                                <option>-Select Branch-</option>
+                                                <option>Branch 1</option>
+                                                <option>Branch 2</option>
+                                                <option>Branch 3</option>
+                                                <option>Branch 4</option>
+                                            </select>
+                                            
+                                        </div>
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										
+									</div>
+									<div class="col-xs-6 col-sm-3">
+										
+									</div>
+							</div>
+							
+							<div class="row">
+                                <div class="col-xs-6 col-sm-3">
+									<div class="form-group">
+										<label>Effective Date</label>
+										<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+									</div>
+								</div>	
+								<div class="col-xs-6 col-sm-3">
+									<label>Time</label>
+									<input class="form-control" placeholder="12:01 AM">	
+								</div>
+								<div class="col-xs-6 col-sm-3">
+									<div class="form-group">
+										<label>To Effective Date</label>
+										<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-6 col-sm-3">
+									<label>Time</label>
+									<input class="form-control" placeholder="12:01 AM">	
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+                                            <label>Producer</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-md-8">
+									<div class="form-group">
+                                            <label>---</label>
+											<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+                                            <label>Sub Producer</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-md-8">
+									<div class="form-group">
+                                            <label>---</label>
+											<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+                                            <label>Underwriter</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-md-8">
+									<div class="form-group">
+                                            <label>---</label>
+											<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+                                            <label>CQE Edition</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-md-8">
+									<div class="form-group">
+                                            <label>---</label>
+											<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+                                            <label>Rate Edition</label>
+                                            <input class="form-control">
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-md-8">
+									<div class="form-group">
+                                            <label>---</label>
+											<div class='input-group date' id='datetimepicker1'>
+											<input type='text' class="form-control" />
+											<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Issued On</label>
+                                           <p class="form-control-static">< Not Issued ></p>
+                                           
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Issued By</label>
+                                           <p class="form-control-static"></p>
+                                            
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Business Type</label>
+											<select class="form-control">
+												<option>-Select One-</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                        <label>SIC</label>
+                                        <select class="form-control">
+											<option>-Select One-</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select> 
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Billing Type</label>
+											<select class="form-control">
+												<option>-Select One-</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											</select>
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                        <label>Pay Plan</label>
+                                        <select class="form-control">
+											<option>-Select Payment Plan-</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+											<option>5</option>
+										</select> 
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Finance Co.</label>
+											<select class="form-control">
+												<option>-Select Company-</option>
+												<option>Company 2</option>
+												<option>Company 3</option>
+												<option>Company 4</option>
+												<option>Company 5</option>
+											</select>
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                        <label>Account</label>
+                                        <input type='text' class="form-control" />
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<h1 class="page-header"></h1>
+									</div>
+							</div>
+							
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<h5 class="page-header">Treaty Details</h5>
+									</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Excess</label>
+											<select class="form-control">
+												<option>-Select Treaty-</option>
+												<option>Treaty 2</option>
+												<option>Treaty 3</option>
+												<option>Treaty 4</option>
+												<option>Treaty 5</option>
+											</select>
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                        <label>Quota Share</label>
+                                        <select class="form-control">
+											<option>-Select Treaty-</option>
+											<option>Treaty 2</option>
+											<option>Treaty 3</option>
+											<option>Treaty 4</option>
+											<option>Treaty 5</option>
+										</select> 
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-6">
+									<div class="form-group">
+                                            <label>Catastrophe</label>
+											<select class="form-control">
+												<option>-Select Treaty-</option>
+												<option>Treaty 2</option>
+												<option>Treaty 3</option>
+												<option>Treaty 4</option>
+												<option>Treaty 5</option>
+											</select>
+                                    </div>
+								</div>		
+								 <div class="col-xs-6">
+									<div class="form-group">
+                                        <label>Others</label>
+                                        <select class="form-control">
+											<option>-Select Treaty-</option>
+											<option>Treaty 2</option>
+											<option>Treaty 3</option>
+											<option>Treaty 4</option>
+											<option>Treaty 5</option>
+										</select> 
+                                    </div>
+								 </div>
+							</div>
+							
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<h1 class="page-header"></h1>
+									</div>
+							</div>
+														
+							<div class="row">
+                                
+									<div class="col-lg-12">
+										<h5 class="page-header">Treaty Details</h5>
+									</div>
+							</div>
+							
+							<div class="row">
+									<div class="col-lg-12">
+										<div class="form-group">
+                                            <label>Owner Comm</label>
+                                            <input type='text' class="form-control" /> 
+                                            
+                                        </div>
+									</div>
+									
+							</div>
+                                       
+                            </div>
+                            <!-- /.row (nested) -->
+							 </form>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+					
+					<div class="row">
+                <div class="col-md-8">
+					<div style="font-size:20px;">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pause"><span class="glyphicon glyphicon-pause" style="color:#ECF276;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="List"><span class="glyphicon glyphicon-compressed" style="color:#F2C55C;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Price"><span class="glyphicon glyphicon-usd" style="color:#6AA349;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Price"><span class="glyphicon glyphicon-usd" style="color:#A03894;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Unlock"><span class="glyphicon glyphicon-lock" style="color:#D3CA4A;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cut"><span class="glyphicon glyphicon-transfer" style="color:#5151A5;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Copy"><span class="glyphicon glyphicon-transfer" style="color:#F70909;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Open"><span class="glyphicon glyphicon-folder-open" style="color:#0DBA07;"></span></a>
+									
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="File"><span class="glyphicon glyphicon-file"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Unlock"><span class="glyphicon glyphicon-list" style="color:#0DBA07;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Calendar"><span class="glyphicon glyphicon-calendar" style="color:#8959F9;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit" style="color:#D39563"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Alphabet"><span class="glyphicon glyphicon-sort-by-alphabet" style="color:#B57124"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Paragraph"><span class="glyphicon glyphicon-sort-by-order" style="color:#DB2B13"></span></a>
+					
+					
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div style="float:right; font-size:20px;">
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit" style="color:#149B1D;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Lists"><span class="glyphicon glyphicon-tasks" style="color:#F7F702;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Copy"><span class="glyphicon glyphicon-file" style="color:#1832F4;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-file" style="color:#132AD8;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="File"><span class="glyphicon glyphicon-file" style="color:#000000;"></span></a>
+					
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Print"><span class="glyphicon glyphicon-print" style="color:#63D3CE;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Save"><span class="glyphicon glyphicon-floppy-saved" style="color:#5CF959;"></span></a>
+					<a href="#" data-toggle="tooltip" data-placement="bottom" title="Cancel"><span class="glyphicon glyphicon-floppy-remove" style="color:red;"></span></a>
+					</div>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            </div>		
+			
+			
+        </div>
+        <!-- /#page-wrapper -->
+		
+		
+
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+	
+	
+	
+    <!-- Morris Charts JavaScript -->
+   <!-- <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+	
+	
+	
+	<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+
+</body>
+
+</html>

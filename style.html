@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DMCIS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+	
+	 <!-- DataTables CSS -->
+    <link href="css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+   
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	
+	
+	
+	<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+	
+	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+		
+		<div class="row">
+		<div style="width:100%;background:#446CB3;text-align:right; padding: 4px 20px 5px 0;">
+			
+				<div class="headermenu">
+				<a href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><span class="glyphicon glyphicon-home" style="margin:5px;" ></span></a>
+				
+				<a href="#"data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit" style="margin:5px;" ></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Reload"><span class="glyphicon glyphicon-refresh" style="margin:5px;"></span></a>
+								
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Search"><span class="glyphicon glyphicon-search" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Save"><span class="glyphicon glyphicon-save" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Calendar"><span class="glyphicon glyphicon-calendar" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Exit"><span class="glyphicon glyphicon-off" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Help"><span class="glyphicon glyphicon-question-sign" style="margin:5px;"></span></a>
+				</div>
+                
+		</div>
+		</div>
+        <!-- Navigation -->
+		
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header" style="padding: 6px 0;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="dashboard.html"><img src="img/dmcisnewlogo.png" width="300" /></a>
+            </div>
+            <!-- /.navbar-header -->
+			
+			<div style="padding-top:6px;">
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-pencil fa-fw"></i>
+						Underwriting <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="newtemplate.html">
+                                <div>
+                                    <strong>Create New Template</strong>
+                                    <!-- <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span> -->
+                                </div>
+                               
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Template</strong>
+                                    
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>New Application</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Application</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Copy From Template</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="newpolicy.html">
+                                <div>
+                                    <strong>New Policy</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Policy</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Policy Action</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Duplicate Search</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                       <i class="fa fa-eye fa-fw"></i> 
+					   Inspections <i class="fa fa-caret-down"></i> 
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find My Request</strong>
+                                       
+                                    </p>
+                                 
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Post My Result</strong>
+                                       
+                                    </p>
+                                  
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>New Request</strong>
+                                     
+                                    </p>
+                                  
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Request</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Assign Inspector</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Inspection Charge</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Re-assign Inspector</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+                      
+                       
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                       <i class="fa fa-list fa-fw"></i>
+					   Claims <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>New Less Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Find Less Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Open Claim</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Assign Adjustor</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Claims</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Copy Claim</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Re-assign Adjustor</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Authorize Reserves</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Authorize Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Payment Control</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Expense Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Process Check</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+				
+				
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <i class="fa fa-bar-chart-o fa-fw"></i>
+					  Reports <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Request Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Search Reports</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Saved Reports</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                                              
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+				
+				
+				
+				
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+			</div>
+            <!-- /.navbar-top-links -->
+
+<div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+						
+						<li>
+                            <a href="style.html"><i class="fa fa-edit fa-fw"></i> <span style="font-size:120%;font-weight:bold;">UI STYLES</span></a>
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-pencil fa-fw"></i> Underwriting<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+								<li>
+									<a href="newtemplate.html">Create New Template</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Template</a>
+								</li>
+								
+								<li>
+									<a href="#">New Application</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Application</a>
+								</li>
+								
+								<li>
+									<a href="#">Copy From Template</a>
+								</li>
+								
+								<li>
+									<a href="newpolicy.html">New Policy</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Policy</a>
+								</li>
+								
+								
+								<li>
+									<a href="#">Policy Action</a>
+								</li>
+								
+								
+								<li>
+									<a href="#">Duplicate Search</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-eye fa-fw"></i> Inspections<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">Find My Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Post My Result</a>
+								</li>
+								
+								<li>
+									<a href="#">New Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Assign Inspector</a>
+								</li>
+								
+								<li>
+									<a href="#">Inspection Charge</a>
+								</li>
+								
+								<li>
+									<a href="#">Re-assign Inspector</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-list fa-fw"></i> Claims<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">New Less Report</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Less Report</a>
+								</li>
+								
+								<li>
+									<a href="#">Open Claim</a>
+								</li>
+							   
+								<li>
+									<a href="#">Assign Adjustor</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Claims</a>
+								</li>
+								
+								<li>
+									<a href="#">Copy Claim</a>
+								</li>
+								
+								<li>
+									<a href="#">Re-assign Adjustor</a>
+								</li>
+								
+								<li>
+									<a href="#">Authorize Reserves</a>
+								</li>
+								
+								<li>
+									<a href="#">Authorize Payments</a>
+								</li>
+								
+								<li>
+									<a href="#">Payment Control</a>
+								</li>
+								
+								<li>
+									<a href="#">Expense Payments</a>
+								</li>
+								
+								<li>
+									<a href="#">Process Check</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Payments</a>
+								</li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">Request Report</a>
+								</li>
+							   
+								<li>
+									<a href="#">Search Reports</a>
+								</li>
+								
+								<li>
+									<a href="#">Saved Reports</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+		
+		
+		<!--  /. secondary-navigation-bar  -->
+			
+		<!--  /. secondary-navigation-bar  -->
+
+        <div id="page-wrapper" style="background-image:url('img/Hunting-Eagl.png'); background-repeat: no-repeat; background-position: center;">
+           
+			<div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Table Elements</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+          
+            <div class="row">
+                
+               <div class="panel panel-default">
+                        <div class="panel-heading">
+                            DataTables Advanced Tables
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+											<th>Phone #</th>
+											<th>Email</th>
+											<th>Age</th>
+											<th>Policy #</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+											<td>Angela G. Goff</td>
+											<td>1-420-429-8177</td>
+											<td>Mauris.vestibulum.neque@In.co.uk</td>
+											<td>55</td>
+											<td>GT53506666487205170577420939</td>
+										</tr>
+										<tr>
+											<td>Galvin F. Sandoval</td>
+											<td>1-226-718-8214</td>
+											<td>erat.eget.tincidunt@nonbibendum.edu</td>
+											<td>51</td>
+											<td>LB21935466585506546784202061</td>
+										</tr>
+										<tr>
+											<td>Ora Y. Hurst</td>
+											<td>1-993-297-5443</td>
+											<td>sem.vitae.aliquam@a.net</td>
+											<td>28</td>
+											<td>PK0999914599626227089861</td>
+										</tr>
+										<tr>
+											<td>Tamara L. Fisher</td>
+											<td>1-598-247-7220</td>
+											<td>dis.parturient.montes@mi.com</td>
+											<td>33</td>
+											<td>LB44287416856460436356175967</td>
+										</tr>
+										<tr>
+											<td>Ferdinand V. Chapman</td>
+											<td>1-500-411-3515</td>
+											<td>porttitor@penatibusetmagnis.com</td>
+											<td>37</td>
+											<td>GR1699835780466944136253022</td>
+										</tr>
+										<tr>
+											<td>Jenna J. Berger</td>
+											<td>1-597-934-9075</td>
+											<td>fringilla.ornare.placerat@adlitoratorquent.ca</td>
+											<td>47</td>
+											<td>BA372049231595757338</td>
+										</tr>
+										<tr>
+											<td>Zachery W. Burch</td>
+											<td>1-249-972-2744</td>
+											<td>libero.Proin.mi@ultrices.co.uk</td>
+											<td>70</td>
+											<td>TN9793354960814486335809</td>
+										</tr>
+										<tr>
+											<td>Gabriel L. Riddle</td>
+											<td>1-113-398-9907</td>
+											<td>Maecenas.malesuada@ipsum.org</td>
+											<td>62</td>
+											<td>RS06955702237190333635</td>
+										</tr>
+										<tr>
+											<td>Rae C. Mcguire</td>
+											<td>1-448-411-3513</td>
+											<td>malesuada@tincidunt.org</td>
+											<td>18</td>
+											<td>GE89465159505635748521</td>
+										</tr>
+										<tr>
+											<td>Emerald Y. Oconnor</td>
+											<td>1-840-326-9560</td>
+											<td>urna.Nullam.lobortis@sed.com</td>
+											<td>44</td>
+											<td>SE1692585136575925115404</td>
+										</tr>
+										<tr>
+											<td>Molly W. Allison</td>
+											<td>1-718-376-3934</td>
+											<td>risus.odio@felis.co.uk</td>
+											<td>58</td>
+											<td>MU5471429465388362690462101808</td>
+										</tr>
+										<tr>
+											<td>Jolene O. Shields</td>
+											<td>1-184-769-1685</td>
+											<td>odio@mauris.edu</td>
+											<td>64</td>
+											<td>FI3191583414765802</td>
+										</tr>
+										<tr>
+											<td>Charity Z. Graves</td>
+											<td>1-926-172-0408</td>
+											<td>semper@malesuada.edu</td>
+											<td>26</td>
+											<td>ME74093078997812539813</td>
+										</tr>
+										<tr>
+											<td>Asher D. Porter</td>
+											<td>1-636-760-6869</td>
+											<td>conubia@litora.edu</td>
+											<td>54</td>
+											<td>VG0912690768764588408213</td>
+										</tr>
+										<tr>
+											<td>Ava Q. Wallace</td>
+											<td>1-190-492-2845</td>
+											<td>magnis.dis.parturient@idnuncinterdum.org</td>
+											<td>60</td>
+											<td>LT860551521287867227</td>
+										</tr>
+										<tr>
+											<td>Judah L. Burt</td>
+											<td>1-720-978-4872</td>
+											<td>a.sollicitudin@etmagnis.com</td>
+											<td>34</td>
+											<td>BE87757026659338</td>
+										</tr>
+										<tr>
+											<td>Charles B. Schneider</td>
+											<td>1-295-988-6752</td>
+											<td>augue.malesuada@lacusQuisqueimperdiet.ca</td>
+											<td>54</td>
+											<td>KW0700434444476871471653482910</td>
+										</tr>
+										<tr>
+											<td>Kieran A. Turner</td>
+											<td>1-537-501-5806</td>
+											<td>lectus@temporbibendumDonec.net</td>
+											<td>28</td>
+											<td>KZ611687613742811792</td>
+										</tr>
+										<tr>
+											<td>Colorado S. Alston</td>
+											<td>1-447-183-7033</td>
+											<td>Nullam@nonmagna.net</td>
+											<td>67</td>
+											<td>MT80WDYP60240120629051527044481</td>
+										</tr>
+										<tr>
+											<td>Britanney G. Macdonald</td>
+											<td>1-223-200-0600</td>
+											<td>ac.metus.vitae@elit.net</td>
+											<td>19</td>
+											<td>SI85563550692226400</td>
+										</tr>
+										<tr>
+											<td>Ronan F. Tucker</td>
+											<td>1-695-459-9589</td>
+											<td>augue.scelerisque.mollis@utcursusluctus.com</td>
+											<td>31</td>
+											<td>LU812942327276325672</td>
+										</tr>
+										<tr>
+											<td>Marvin I. Landry</td>
+											<td>1-546-736-1013</td>
+											<td>ante@Aliquamnisl.ca</td>
+											<td>57</td>
+											<td>ME24750386241220492913</td>
+										</tr>
+										<tr>
+											<td>Shaeleigh B. Langley</td>
+											<td>1-272-467-5340</td>
+											<td>Aenean.eget@Aliquamornare.org</td>
+											<td>49</td>
+											<td>ES3084144025115414365723</td>
+										</tr>
+										<tr>
+											<td>Andrew O. Marshall</td>
+											<td>1-926-477-4123</td>
+											<td>urna.Ut@metusIn.co.uk</td>
+											<td>29</td>
+											<td>CZ7460049480400261945931</td>
+										</tr>
+										<tr>
+											<td>Tyrone I. Cote</td>
+											<td>1-320-648-0291</td>
+											<td>lorem.Donec.elementum@dui.co.uk</td>
+											<td>35</td>
+											<td>GI41SWEX649832583185199</td>
+										</tr>
+										<tr>
+											<td>Dalton Y. Hughes</td>
+											<td>1-292-782-0900</td>
+											<td>convallis.ante@semperduilectus.net</td>
+											<td>44</td>
+											<td>MK29061901646750475</td>
+										</tr>
+										<tr>
+											<td>Desiree L. Day</td>
+											<td>1-461-653-2188</td>
+											<td>adipiscing.elit@adipiscingenim.com</td>
+											<td>59</td>
+											<td>LB82361289368346042568857374</td>
+										</tr>
+										<tr>
+											<td>Erin Q. Dalton</td>
+											<td>1-799-169-8810</td>
+											<td>lorem@etultrices.ca</td>
+											<td>34</td>
+											<td>RS20136727872524820179</td>
+										</tr>
+										<tr>
+											<td>Mallory U. Fitzpatrick</td>
+											<td>1-127-500-4692</td>
+											<td>amet.diam.eu@velfaucibus.ca</td>
+											<td>33</td>
+											<td>CH0224867500652667993</td>
+										</tr>
+										<tr>
+											<td>Shafira V. Carr</td>
+											<td>1-492-651-2502</td>
+											<td>in@cursusNuncmauris.edu</td>
+											<td>46</td>
+											<td>NO6037964298079</td>
+										</tr>
+										<tr>
+											<td>Brandon X. Simmons</td>
+											<td>1-755-207-0691</td>
+											<td>sapien@sem.org</td>
+											<td>36</td>
+											<td>PT73113384825057896085484</td>
+										</tr>
+										<tr>
+											<td>Berk I. Gross</td>
+											<td>1-769-737-6767</td>
+											<td>vel.lectus.Cum@Fuscediamnunc.co.uk</td>
+											<td>24</td>
+											<td>LT825809914141963482</td>
+										</tr>
+										<tr>
+											<td>Laith P. Reese</td>
+											<td>1-424-440-9953</td>
+											<td>arcu@pedenonummyut.net</td>
+											<td>57</td>
+											<td>NL12VDCD5126949180</td>
+										</tr>
+										<tr>
+											<td>Connor U. Fowler</td>
+											<td>1-519-456-3173</td>
+											<td>nec@ipsumporta.com</td>
+											<td>69</td>
+											<td>FO3456720886966082</td>
+										</tr>
+										<tr>
+											<td>Kelsie U. Cox</td>
+											<td>1-405-681-6288</td>
+											<td>lorem.semper@felisDonec.co.uk</td>
+											<td>36</td>
+											<td>LT781124592182109314</td>
+										</tr>
+										<tr>
+											<td>Nicole T. Dennis</td>
+											<td>1-406-273-0735</td>
+											<td>Curae.Phasellus@sedtortorInteger.com</td>
+											<td>39</td>
+											<td>BE75986598302547</td>
+										</tr>
+										<tr>
+											<td>Geraldine N. Austin</td>
+											<td>1-370-368-9473</td>
+											<td>est.Nunc@risusDonecegestas.org</td>
+											<td>49</td>
+											<td>MT33ELFZ45781000287875601784194</td>
+										</tr>
+										<tr>
+											<td>Quon P. Roth</td>
+											<td>1-830-830-7409</td>
+											<td>mus@malesuadaaugue.net</td>
+											<td>40</td>
+											<td>PL87637611887658489106240996</td>
+										</tr>
+										<tr>
+											<td>Tatum J. Mcpherson</td>
+											<td>1-648-575-2901</td>
+											<td>tellus.eu@semper.net</td>
+											<td>23</td>
+											<td>MK95475678291721213</td>
+										</tr>
+										<tr>
+											<td>Sharon J. Mccarty</td>
+											<td>1-294-625-3063</td>
+											<td>nisl.Maecenas.malesuada@egetvolutpat.edu</td>
+											<td>33</td>
+											<td>GE05407432905671357082</td>
+										</tr>
+										<tr>
+											<td>Sierra Q. Lindsay</td>
+											<td>1-975-122-2106</td>
+											<td>Praesent.eu.nulla@loremsemper.edu</td>
+											<td>25</td>
+											<td>PT23391593273628992998634</td>
+										</tr>
+										<tr>
+											<td>Blake S. English</td>
+											<td>1-751-346-4992</td>
+											<td>neque@SedmolestieSed.org</td>
+											<td>68</td>
+											<td>GT28993888968925325231012724</td>
+										</tr>
+										<tr>
+											<td>Lewis H. Stone</td>
+											<td>1-514-732-9282</td>
+											<td>dignissim@mollisPhaselluslibero.org</td>
+											<td>64</td>
+											<td>SI45613610250104825</td>
+										</tr>
+										<tr>
+											<td>Leslie V. Hawkins</td>
+											<td>1-886-815-0327</td>
+											<td>urna@lobortisultrices.edu</td>
+											<td>18</td>
+											<td>IL176349661555581504971</td>
+										</tr>
+										<tr>
+											<td>Darius W. Gregory</td>
+											<td>1-309-604-3209</td>
+											<td>sit.amet.ultricies@risusa.ca</td>
+											<td>65</td>
+											<td>SE9368779576617909386098</td>
+										</tr>
+										<tr>
+											<td>Petra V. Whitley</td>
+											<td>1-830-272-3012</td>
+											<td>id.nunc@arcu.org</td>
+											<td>50</td>
+											<td>HU86780950860361780881062051</td>
+										</tr>
+										<tr>
+											<td>Kylee W. Wiley</td>
+											<td>1-191-615-6939</td>
+											<td>Pellentesque.habitant.morbi@nibh.ca</td>
+											<td>20</td>
+											<td>SK5127094535256051413777</td>
+										</tr>
+										<tr>
+											<td>Rhiannon L. Klein</td>
+											<td>1-401-616-2913</td>
+											<td>Quisque@congueelitsed.com</td>
+											<td>25</td>
+											<td>RS27408956375751564050</td>
+										</tr>
+										<tr>
+											<td>Kasimir U. Goodman</td>
+											<td>1-807-844-1174</td>
+											<td>purus.gravida.sagittis@justoeuarcu.edu</td>
+											<td>60</td>
+											<td>LV74KTMK7594212536714</td>
+										</tr>
+										<tr>
+											<td>Jacqueline N. Sharp</td>
+											<td>1-758-125-1227</td>
+											<td>Cras.sed@quam.com</td>
+											<td>45</td>
+											<td>DO76638912454345414403790360</td>
+										</tr>
+										<tr>
+											<td>Kendall O. Solomon</td>
+											<td>1-863-394-8214</td>
+											<td>pede@Inornaresagittis.com</td>
+											<td>58</td>
+											<td>CH4310188328625447288</td>
+										</tr>
+										<tr>
+											<td>Brody N. Valenzuela</td>
+											<td>1-882-864-7453</td>
+											<td>vitae.aliquam.eros@diamnunc.com</td>
+											<td>42</td>
+											<td>LI9548327677662881058</td>
+										</tr>
+										<tr>
+											<td>Anjolie Z. Salazar</td>
+											<td>1-498-125-6869</td>
+											<td>urna.Ut@sapiencursusin.net</td>
+											<td>37</td>
+											<td>SE8971282170309822522190</td>
+										</tr>
+										<tr>
+											<td>Kieran V. Mcmahon</td>
+											<td>1-927-116-6625</td>
+											<td>Etiam.gravida@aliquet.edu</td>
+											<td>42</td>
+											<td>MK60361052625250444</td>
+										</tr>
+										<tr>
+											<td>Lucian G. Ayers</td>
+											<td>1-275-682-1825</td>
+											<td>risus@volutpatNulladignissim.net</td>
+											<td>62</td>
+											<td>GT88533485291687572753452363</td>
+										</tr>
+										<tr>
+											<td>Lance Y. Barnes</td>
+											<td>1-185-709-3467</td>
+											<td>arcu.et@sedleoCras.org</td>
+											<td>42</td>
+											<td>MD2015094821235707311832</td>
+										</tr>
+										<tr>
+											<td>Sacha Y. Smith</td>
+											<td>1-874-120-6225</td>
+											<td>magna.Nam@musProinvel.edu</td>
+											<td>61</td>
+											<td>KW1916016806791605733908261381</td>
+										</tr>
+										<tr>
+											<td>Clinton C. Taylor</td>
+											<td>1-361-322-4348</td>
+											<td>Proin.eget.odio@semconsequatnec.edu</td>
+											<td>21</td>
+											<td>LU701160660945035415</td>
+										</tr>
+										<tr>
+											<td>Kermit K. Hubbard</td>
+											<td>1-787-518-9616</td>
+											<td>mollis.Duis@ultricesposuerecubilia.org</td>
+											<td>38</td>
+											<td>CY64584175503138284540754212</td>
+										</tr>
+										<tr>
+											<td>Aurora Z. Hoover</td>
+											<td>1-273-246-6627</td>
+											<td>fermentum@facilisismagnatellus.ca</td>
+											<td>49</td>
+											<td>TN9368224936830423767196</td>
+										</tr>
+										<tr>
+											<td>Salvador H. Holder</td>
+											<td>1-275-908-2444</td>
+											<td>turpis.egestas@ametultricies.edu</td>
+											<td>23</td>
+											<td>FI7184592520126429</td>
+										</tr>
+										<tr>
+											<td>Jasmine Y. Rodgers</td>
+											<td>1-929-646-5197</td>
+											<td>Class.aptent.taciti@massalobortis.co.uk</td>
+											<td>54</td>
+											<td>ME69935045757989329631</td>
+										</tr>
+										<tr>
+											<td>Uriah U. Wheeler</td>
+											<td>1-251-423-5569</td>
+											<td>netus.et@et.co.uk</td>
+											<td>34</td>
+											<td>GE87260896464258528902</td>
+										</tr>
+										<tr>
+											<td>Tyler I. Mitchell</td>
+											<td>1-624-576-7520</td>
+											<td>nunc@Aeneanegetmagna.edu</td>
+											<td>69</td>
+											<td>HU53329924862387908747902673</td>
+										</tr>
+										<tr>
+											<td>Jackson B. Carroll</td>
+											<td>1-484-821-2099</td>
+											<td>diam.nunc@pedesagittis.ca</td>
+											<td>61</td>
+											<td>GB45LKLQ56486046865161</td>
+										</tr>
+										<tr>
+											<td>Sean B. Turner</td>
+											<td>1-264-486-1706</td>
+											<td>at@sit.edu</td>
+											<td>66</td>
+											<td>GL4326311079686410</td>
+										</tr>
+										<tr>
+											<td>James K. Patel</td>
+											<td>1-615-705-8759</td>
+											<td>pede.ac.urna@luctuslobortisClass.co.uk</td>
+											<td>61</td>
+											<td>EE251283626798595821</td>
+										</tr>
+										<tr>
+											<td>Denise Z. Chase</td>
+											<td>1-877-692-3447</td>
+											<td>Nullam.ut@anteipsum.org</td>
+											<td>21</td>
+											<td>PS084737939550066163259091841</td>
+										</tr>
+										<tr>
+											<td>Claudia S. Chase</td>
+											<td>1-302-620-2219</td>
+											<td>pellentesque@cubiliaCurae.ca</td>
+											<td>19</td>
+											<td>PK1303617442452207391687</td>
+										</tr>
+										<tr>
+											<td>Malcolm L. Roman</td>
+											<td>1-141-105-1793</td>
+											<td>rutrum.urna@dignissimlacusAliquam.org</td>
+											<td>28</td>
+											<td>LB71255790073834851052111877</td>
+										</tr>
+										<tr>
+											<td>Gary G. Cochran</td>
+											<td>1-303-658-1560</td>
+											<td>mauris@MorbivehiculaPellentesque.edu</td>
+											<td>56</td>
+											<td>GB36FLQN03797307903803</td>
+										</tr>
+										<tr>
+											<td>Abel K. Savage</td>
+											<td>1-759-150-6948</td>
+											<td>tristique@luctusutpellentesque.ca</td>
+											<td>67</td>
+											<td>PK5222782190397643526284</td>
+										</tr>
+										<tr>
+											<td>Ainsley R. Odom</td>
+											<td>1-640-754-1430</td>
+											<td>facilisis.facilisis@turpis.com</td>
+											<td>27</td>
+											<td>LB30049447436275015201230695</td>
+										</tr>
+										<tr>
+											<td>Olga Y. Freeman</td>
+											<td>1-310-685-8139</td>
+											<td>nec.mollis.vitae@magnaLorem.co.uk</td>
+											<td>33</td>
+											<td>LV65VKCE8563143549944</td>
+										</tr>
+										<tr>
+											<td>Hammett P. Frank</td>
+											<td>1-577-269-4522</td>
+											<td>a.neque.Nullam@mattis.co.uk</td>
+											<td>20</td>
+											<td>LV25IJIX6481367538575</td>
+										</tr>
+										<tr>
+											<td>Fletcher Y. Irwin</td>
+											<td>1-540-646-4875</td>
+											<td>eget@tincidunt.edu</td>
+											<td>39</td>
+											<td>IS493524202283781468835022</td>
+										</tr>
+										<tr>
+											<td>Timothy K. Bond</td>
+											<td>1-759-847-8570</td>
+											<td>montes.nascetur@odiosemper.org</td>
+											<td>21</td>
+											<td>GB16FRIF41984563085346</td>
+										</tr>
+										<tr>
+											<td>Keane L. Pugh</td>
+											<td>1-318-191-7175</td>
+											<td>Donec.est@nuncacmattis.net</td>
+											<td>41</td>
+											<td>FR5665639575448842511617132</td>
+										</tr>
+										<tr>
+											<td>Ginger V. Kidd</td>
+											<td>1-566-791-8705</td>
+											<td>neque.et@semelitpharetra.edu</td>
+											<td>56</td>
+											<td>PT21437896406893006734465</td>
+										</tr>
+										<tr>
+											<td>Naida J. Day</td>
+											<td>1-856-822-0420</td>
+											<td>volutpat.Nulla@hendreritDonec.ca</td>
+											<td>57</td>
+											<td>MU5150431589425180540963269690</td>
+										</tr>
+										<tr>
+											<td>Alyssa Y. Hickman</td>
+											<td>1-477-751-4998</td>
+											<td>ante.ipsum@nonleo.co.uk</td>
+											<td>59</td>
+											<td>RS84939187896746702008</td>
+										</tr>
+										<tr>
+											<td>Rebekah V. Pate</td>
+											<td>1-668-363-2063</td>
+											<td>malesuada.fames.ac@augue.org</td>
+											<td>35</td>
+											<td>NO1058647316039</td>
+										</tr>
+										<tr>
+											<td>Lewis W. Oneill</td>
+											<td>1-261-796-6942</td>
+											<td>turpis.vitae.purus@egetlaoreet.co.uk</td>
+											<td>43</td>
+											<td>SA7474610390435876188558</td>
+										</tr>
+										<tr>
+											<td>MacKensie E. Orr</td>
+											<td>1-236-703-6702</td>
+											<td>id.sapien@dolor.com</td>
+											<td>38</td>
+											<td>KZ320097229052578859</td>
+										</tr>
+										<tr>
+											<td>Belle S. Blake</td>
+											<td>1-176-909-7703</td>
+											<td>tellus@natoque.ca</td>
+											<td>57</td>
+											<td>SE0750733514617384837818</td>
+										</tr>
+										<tr>
+											<td>Deacon D. Cervantes</td>
+											<td>1-771-761-3994</td>
+											<td>vel.quam.dignissim@luctusCurabitur.co.uk</td>
+											<td>32</td>
+											<td>PK2309565525145069809660</td>
+										</tr>
+										<tr>
+											<td>Kathleen O. Lindsey</td>
+											<td>1-421-721-1112</td>
+											<td>Phasellus@venenatisamagna.com</td>
+											<td>31</td>
+											<td>LT432199963791939616</td>
+										</tr>
+										<tr>
+											<td>MacKensie Z. William</td>
+											<td>1-915-736-2528</td>
+											<td>lorem@anteVivamusnon.ca</td>
+											<td>66</td>
+											<td>BG19HJXQ33374050785684</td>
+										</tr>
+										<tr>
+											<td>Len Y. Workman</td>
+											<td>1-699-590-9704</td>
+											<td>enim@Donecat.co.uk</td>
+											<td>69</td>
+											<td>LV71POXH9822551820700</td>
+										</tr>
+										<tr>
+											<td>Melanie M. Barlow</td>
+											<td>1-868-312-4343</td>
+											<td>dolor.tempus@egetmollis.org</td>
+											<td>70</td>
+											<td>RO24RQNK3543221999096034</td>
+										</tr>
+										<tr>
+											<td>Adrian I. Rich</td>
+											<td>1-421-805-0720</td>
+											<td>vestibulum.lorem.sit@InfaucibusMorbi.net</td>
+											<td>37</td>
+											<td>BA643451228381697094</td>
+										</tr>
+										<tr>
+											<td>Tyrone Z. Boone</td>
+											<td>1-861-783-0435</td>
+											<td>convallis.ante@antebibendum.com</td>
+											<td>20</td>
+											<td>DE56624873014501377470</td>
+										</tr>
+										<tr>
+											<td>Iona J. Frederick</td>
+											<td>1-163-226-8577</td>
+											<td>et.magnis.dis@nondapibus.ca</td>
+											<td>19</td>
+											<td>CR3254809853194059958</td>
+										</tr>
+										<tr>
+											<td>Dalton B. Sargent</td>
+											<td>1-871-354-6820</td>
+											<td>euismod.ac@Nunc.net</td>
+											<td>27</td>
+											<td>DO56616052888485587117336382</td>
+										</tr>
+										<tr>
+											<td>Petra Q. Wallace</td>
+											<td>1-840-794-1037</td>
+											<td>Nulla.facilisis@diam.ca</td>
+											<td>23</td>
+											<td>AD5537470882740618660765</td>
+										</tr>
+										<tr>
+											<td>Pascale P. Knight</td>
+											<td>1-757-486-1701</td>
+											<td>Integer.id@elitNulla.ca</td>
+											<td>48</td>
+											<td>CZ1502897035716894336401</td>
+										</tr>
+										<tr>
+											<td>Dante L. Bright</td>
+											<td>1-791-123-9351</td>
+											<td>magnis@quamPellentesque.net</td>
+											<td>29</td>
+											<td>ES7158584526353941381026</td>
+										</tr>
+										<tr>
+											<td>Cora N. Melton</td>
+											<td>1-794-353-8122</td>
+											<td>egestas.Aliquam.fringilla@eget.org</td>
+											<td>35</td>
+											<td>BA774893068045900299</td>
+										</tr>
+										<tr>
+											<td>Tucker H. Dunlap</td>
+											<td>1-388-921-9179</td>
+											<td>id.ante@fringillapurus.com</td>
+											<td>27</td>
+											<td>SM8146366722885052658720383</td>
+										</tr>
+										<tr>
+											<td>Ahmed N. Schroeder</td>
+											<td>1-474-689-5114</td>
+											<td>nibh@molestie.edu</td>
+											<td>33</td>
+											<td>MR5197993199029232239037416</td>
+										</tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+            </div>
+				
+			
+			
+			
+			<div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Forms Elements</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+			
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Basic Form Elements
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+                                        <h4>Normal Buttons</h4>
+                            <p>
+                                <button type="button" class="btn btn-default">Default</button>
+                                <button type="button" class="btn btn-primary">Primary</button>
+                                <button type="button" class="btn btn-success">Success</button>
+                                <button type="button" class="btn btn-info">Info</button>
+                                <button type="button" class="btn btn-warning">Warning</button>
+                                <button type="button" class="btn btn-danger">Danger</button>
+                                <button type="button" class="btn btn-link">Link</button>
+                            </p>
+                            <br>
+                                        <div class="form-group">
+                                            <label>Text Input with Placeholder</label>
+                                            <input class="form-control" placeholder="Enter text">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Checkboxes</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Checkbox 1
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Checkbox 2
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Checkbox 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Inline Checkboxes</label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">1
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">2
+                                            </label>
+                                            <label class="checkbox-inline">
+                                                <input type="checkbox">3
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Radio Buttons</label>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Inline Radio Buttons</label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
+                                            </label>
+                                            <label class="radio-inline">
+                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
+                                            </label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Selects</label>
+                                            <select class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Multiple Selects</label>
+                                            <select multiple class="form-control">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit Button</button>
+                                        <button type="reset" class="btn btn-default">Reset Button</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                <div class="col-lg-6">
+                                    
+                                    <h1>Form Validation States</h1>
+                                    <form role="form">
+                                        <div class="form-group has-success">
+                                            <label class="control-label" for="inputSuccess">Input with success</label>
+                                            <input type="text" class="form-control" id="inputSuccess">
+                                        </div>
+                                        <div class="form-group has-warning">
+                                            <label class="control-label" for="inputWarning">Input with warning</label>
+                                            <input type="text" class="form-control" id="inputWarning">
+                                        </div>
+                                        <div class="form-group has-error">
+                                            <label class="control-label" for="inputError">Input with error</label>
+                                            <input type="text" class="form-control" id="inputError">
+                                        </div>
+                                    </form>
+                                    <h1>Input Groups</h1>
+                                    <form role="form">
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon">@</span>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon"><i class="fa fa-eur"></i>
+                                            </span>
+                                            <input type="text" class="form-control" placeholder="Font Awesome Icon">
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <span class="input-group-addon">$</span>
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+			
+			
+        </div>
+        <!-- /#page-wrapper -->
+		
+		
+
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+	
+	 <!-- DataTables JavaScript -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+	
+	
+    <!-- Morris Charts JavaScript -->
+   <!-- <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+	
+	 <script>
+    $(document).ready(function() {
+        $('#dataTables-example').dataTable();
+    });
+    </script>
+
+</body>
+
+</html>

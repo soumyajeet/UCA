@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DMCIS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+   
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
+	
+	
+	
+	<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+	
+	
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+	
+	<div class="row">
+		<div style="width:100%;background:#446CB3;text-align:right; padding: 4px 20px 5px 0;">
+			
+				<div class="headermenu">
+				<a href="index.html" data-toggle="tooltip" data-placement="bottom" title="Home"><span class="glyphicon glyphicon-home" style="margin:5px;" ></span></a>
+				
+				<a href="#"data-toggle="tooltip" data-placement="bottom" title="Edit"><span class="glyphicon glyphicon-edit" style="margin:5px;" ></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Reload"><span class="glyphicon glyphicon-refresh" style="margin:5px;"></span></a>
+								
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Search"><span class="glyphicon glyphicon-search" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Save"><span class="glyphicon glyphicon-save" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Calendar"><span class="glyphicon glyphicon-calendar" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Exit"><span class="glyphicon glyphicon-off" style="margin:5px;"></span></a>
+				
+				<a href="#" data-toggle="tooltip" data-placement="bottom" title="Help"><span class="glyphicon glyphicon-question-sign" style="margin:5px;"></span></a>
+				</div>
+                
+		</div>
+		</div>
+
+        <!-- Navigation -->
+		
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header" style="padding: 6px 0;">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+               <a class="navbar-brand" href="dashboard.html"><img src="img/dmcisnewlogo.png" width="300" /></a>
+            </div>
+            <!-- /.navbar-header -->
+
+			<div style="padding-top:6px;">
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-pencil fa-fw"></i>
+						Underwriting <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="newtemplate.html">
+                                <div>
+                                    <strong>Create New Template</strong>
+                                    <!-- <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span> -->
+                                </div>
+                               
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Template</strong>
+                                    
+                                </div>
+                                
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>New Application</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Application</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Copy From Template</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>New Policy</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Find Policy</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Policy Action</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+						
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <strong>Duplicate Search</strong>
+                                    
+                                </div>
+                               
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                       <i class="fa fa-eye fa-fw"></i> 
+					   Inspections <i class="fa fa-caret-down"></i> 
+                    </a>
+                    <ul class="dropdown-menu dropdown-tasks">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find My Request</strong>
+                                       
+                                    </p>
+                                 
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Post My Result</strong>
+                                       
+                                    </p>
+                                  
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>New Request</strong>
+                                     
+                                    </p>
+                                  
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Request</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Assign Inspector</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Inspection Charge</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Re-assign Inspector</strong>
+                                       
+                                    </p>
+                                   
+                                </div>
+                            </a>
+                        </li>
+                      
+                       
+                    </ul>
+                    <!-- /.dropdown-tasks -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                       <i class="fa fa-list fa-fw"></i>
+					   Claims <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>New Less Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Find Less Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Open Claim</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Assign Adjustor</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Claims</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Copy Claim</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Re-assign Adjustor</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Authorize Reserves</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Authorize Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Payment Control</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Expense Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Process Check</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+						<li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Find Payments</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+				
+				
+				<li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <i class="fa fa-bar-chart-o fa-fw"></i>
+					  Reports <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Request Report</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                   <p>
+                                        <strong>Search Reports</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <p>
+                                        <strong>Saved Reports</strong>
+                                       
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                                              
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+				
+				
+				
+				
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+			</div>
+		   
+		   <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="style.html"><i class="fa fa-edit fa-fw"></i> <span style="font-size:120%;font-weight:bold;">UI STYLES</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-pencil fa-fw"></i> Underwriting<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+								<li>
+									<a href="newtemplate.html">Create New Template</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Template</a>
+								</li>
+								
+								<li>
+									<a href="#">New Application</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Application</a>
+								</li>
+								
+								<li>
+									<a href="#">Copy From Template</a>
+								</li>
+								
+								<li>
+									<a href="#">New Policy</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Policy</a>
+								</li>
+								
+								
+								<li>
+									<a href="#">Policy Action</a>
+								</li>
+								
+								
+								<li>
+									<a href="#">Duplicate Search</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        
+                        <li>
+                            <a href="#"><i class="fa fa-eye fa-fw"></i> Inspections<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">Find My Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Post My Result</a>
+								</li>
+								
+								<li>
+									<a href="#">New Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Request</a>
+								</li>
+								
+								<li>
+									<a href="#">Assign Inspector</a>
+								</li>
+								
+								<li>
+									<a href="#">Inspection Charge</a>
+								</li>
+								
+								<li>
+									<a href="#">Re-assign Inspector</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-list fa-fw"></i> Claims<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">New Less Report</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Less Report</a>
+								</li>
+								
+								<li>
+									<a href="#">Open Claim</a>
+								</li>
+							   
+								<li>
+									<a href="#">Assign Adjustor</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Claims</a>
+								</li>
+								
+								<li>
+									<a href="#">Copy Claim</a>
+								</li>
+								
+								<li>
+									<a href="#">Re-assign Adjustor</a>
+								</li>
+								
+								<li>
+									<a href="#">Authorize Reserves</a>
+								</li>
+								
+								<li>
+									<a href="#">Authorize Payments</a>
+								</li>
+								
+								<li>
+									<a href="#">Payment Control</a>
+								</li>
+								
+								<li>
+									<a href="#">Expense Payments</a>
+								</li>
+								
+								<li>
+									<a href="#">Process Check</a>
+								</li>
+								
+								<li>
+									<a href="#">Find Payments</a>
+								</li>
+                                
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Reports<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+									<a href="#">Request Report</a>
+								</li>
+							   
+								<li>
+									<a href="#">Search Reports</a>
+								</li>
+								
+								<li>
+									<a href="#">Saved Reports</a>
+								</li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+        </nav>
+		
+		
+		<!--  /. secondary-navigation-bar  -->
+			
+		<!--  /. secondary-navigation-bar  -->
+
+        <div id="page-wrapper">
+           
+          <div style="background-image:url('img/Hunting-Eagl.png'); background-repeat: no-repeat; background-position: center; max-height:1000px;">	<!-- div for background image -->
+            
+			
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Create New Template
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <form role="form">
+										<div class="form-group">
+                                            <label>Select Company</label>
+                                            <select class="form-control">
+												<option>Select Company</option>
+                                                <option>company a</option>
+                                                <option>company b</option>
+                                                <option>company c</option>
+                                                <option>company d</option>
+                                                <option>company e</option>
+                                            </select>
+                                        </div>
+										
+										<div class="form-group">
+                                            <label>LOB</label>
+                                            <select class="form-control">
+                                                <option>Select LOB</option>
+                                                <option>LOB a</option>
+                                                <option>LOB b</option>
+                                                <option>LOB c</option>
+                                                <option>LOB d</option>
+                                            </select>
+                                        </div>
+										
+										<div class="form-group">
+                                            <label>Program</label>
+                                            <select class="form-control">
+                                                <option>Select Program</option>
+                                                <option>Program a</option>
+                                                <option>Program b</option>
+                                                <option>Program c</option>
+                                                <option>Program d</option>
+                                            </select>
+                                        </div>
+										
+										<div class="form-group">
+                                            <label>City</label>
+                                            <select class="form-control">
+                                                <option>USA</option>
+                                                <option>UK</option>
+                                                <option>UAE</option>
+                                                <option>Canada</option>
+                                            </select>
+                                        </div>
+										
+										<div class="form-group">
+                                            <label>State</label>
+                                            <select class="form-control">
+                                                <option>Select State</option>
+                                                <option>Texas</option>
+                                                <option>Florida</option>
+                                                <option>Carolina</option>
+                                            </select>
+                                        </div>
+										
+                                        
+                                        <div class="form-group">
+                                            <label>Text area</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <button type="submit" class="btn btn-success">Submit Button</button>
+                                        <button type="reset" class="btn btn-primary">Reset Button</button>
+                                    </form>
+                                </div>
+                                <!-- /.col-lg-6 (nested) -->
+                                
+                                <!-- /.col-lg-6 (nested) -->
+                            </div>
+                            <!-- /.row (nested) -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+			
+            <!-- /.row -->
+			
+			
+			
+        </div>
+        <!-- /#page-wrapper -->
+	</div>
+	
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+	
+	
+
+    <!-- Morris Charts JavaScript -->
+   <!-- <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+	
+
+
+</body>
+
+</html>
